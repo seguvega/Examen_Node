@@ -1,8 +1,6 @@
 ## Plataformas Web P56 - EXAMEN
-Aplicación en NodeJS que permite leer los datos de las
-Suscripciones a telefonía celular móvil, publicadas por el Banco
-Mundial y publicar las estadísticas de un determinado país en un
-año específico.
+Aplicación en NodeJS que permite leer los datos y ver cual es el porcenjate de uso del internet
+del pais especifico
 
 ## Comenzando 🚀
 
