@@ -32,11 +32,6 @@ let guardar = {
         alias: 'y',
         desc: 'Permite especificar el año para el cual se requiere las estadísticas'
     },
-    out: {
-        demand: true, // aqui va el path
-        alias: 'o',
-        desc: ' Establece el nombre del archivo donde se almacenará los resultados.'
-    }
 }
 
 const argv = require('yargs')

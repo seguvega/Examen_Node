@@ -34,7 +34,7 @@ const vectorAnio = async(anio) => {
     let anios = Object.values(informacion[3]);
     anio = anios.indexOf(anio);
     for (let index = 4; index < informacion.length; index++) {
-        datosPorAnio.push([parseInt(informacion[index][anio]), informacion[index][0], informacion[index][1]]);
+        datosPorAnio.push([informacion[index][anio], informacion[index][0], informacion[index][1], informacion[index][2]]);
     }
     return true;
 };
@@ -82,8 +82,11 @@ const _Pais = (codPais) => {
     dato = [];
     datosPorAnio.forEach((element) => {
         if (element[2] == codPais) {
+            if (element[0] == '') {
+                //console.log("entra");
+                element[0] = "No existen datos"
+            }
             dato = element;
-            console.log(dato);
             return;
         }
     });
@@ -98,6 +101,7 @@ const obtenerData = async(codPais, anio, path) => {
     limpiarPaises();
     await comprobarAnio(anio);
     await comprobarPais(codPais);
+    //console.log(datosPorAnio);
     let datosPais = _Pais(codPais);
     return { datosPais };
 };
