@@ -36,7 +36,7 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 _Cuando haya completado la configuración de herramientas, debe descargar el código de la aplicación. La forma más fácil de hacerlo es clonar el repositorio de GitHub:_
 
 ```
-git clone https://github.com/karlaVane/Proyecto-VII-Node.JS.git
+git clone https://github.com/seguvega/Examen_Node.git
 ```
 
 _Una vez completado la clonación, se debe instalar los módulos npm_
