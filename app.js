@@ -13,7 +13,7 @@ const menu = () => {
             console.log("------------------------------------------------------".rainbow);
             console.log(`Datos: ${data.datosPais[3]}`.green);
             console.log(`Pais: ${data.datosPais[1]}`.green);
-            console.log(`Año: ${argv.year}`.green);
+            console.log(`Año: ${argv.anio}`.green);
             console.log(`Valor: `.green, `${data.datosPais[0]}`);
             console.log("----------------------FIN DEL PROGRAMA-----------------".rainbow);
             break;
@@ -31,7 +31,7 @@ const menu = () => {
 };
 
 const ejecutar = async() => {
-    data = await obtenerData(argv.country, argv.year.toString(), argv.archivo);
+    data = await obtenerData(argv.pais, argv.anio.toString(), argv.archivo);
     menu();
     return data;
 };
